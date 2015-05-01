@@ -12,6 +12,6 @@ define_singleton_method(:all) do
   end
 define_singleton_method(:clear) do 
   @@words = []
-end
+end 
 end
 

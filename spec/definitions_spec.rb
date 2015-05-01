@@ -13,4 +13,11 @@ describe(Definitions) do
       expect(Definitions.all()).to(eq([]))
     end
   end
+  describe('#save') do 
+    it('saves definitions to an array') do 
+      test_definition = Definitions.new({:definition => "A triangle with 2 equal sides"})
+      test_definition.save()
+      expect(Definitions.all()).to(eq([test_definition]))
+    end
+  end
 end

@@ -7,4 +7,7 @@ class Definitions
   define_singleton_method(:all) do 
     @@definitions
   end
+  define_method(:save) do 
+    @@definitions.push(self)
+  end
 end
