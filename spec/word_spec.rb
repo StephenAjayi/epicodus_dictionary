@@ -23,6 +23,11 @@ describe(Words) do
       expect(Words.all()).to(eq([]))
     end
   end
+  describe('.clear') do 
+    it('deletes all saved words') do 
+      expect(Words.clear()).to(eq([]))
+    end
+  end
 end
 
   
