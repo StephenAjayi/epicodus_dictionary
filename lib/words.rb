@@ -17,6 +17,10 @@ end
   define_method(:word_definitions) do 
     @word_definitions
   end
+  define_method(:add_definition) do |definition|
+    @word_definitions.push(definition)
+  end
 end
+  
 
 
