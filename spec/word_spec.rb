@@ -1,5 +1,6 @@
 require('rspec')
 require('words')
+require('definitions')
 
 describe(Words) do
   before() do 
@@ -28,7 +29,22 @@ describe(Words) do
       expect(Words.clear()).to(eq([]))
     end
   end
+  describe('# defined_words') do 
+    it('initially retuns an empty array of definoitions for a new word') do 
+      test_word = Words.new({:word_name => "Doe"})
+      expect(test_word.word_definitions()).to(eq([]))
+    end
+  end
 end
+    
+  
+#   describe('#add_definition') do 
+#     it('adds a new definition to a word') do
+#       test_word = Words.new({:word_name => "Doe"})
+#       test_definition = Definitions.new({:definition => "A baby deer"})
+#       test_word.add_definition(test_definition)
+#       expect(test_word.defined_words()).to(eq(test_definition))
+# end
 
   
   
