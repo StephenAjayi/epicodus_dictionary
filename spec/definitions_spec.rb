@@ -20,4 +20,9 @@ describe(Definitions) do
       expect(Definitions.all()).to(eq([test_definition]))
     end
   end
+  describe('#clear') do 
+    it('del(ete all saved definitions from array') do 
+      expect(Definitions.clear()).to(eq([]))
+    end
+  end
 end
